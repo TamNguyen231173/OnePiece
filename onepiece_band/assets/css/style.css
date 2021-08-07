@@ -6,6 +6,7 @@
 }
 
 html {
+    scroll-behavior: smooth;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
@@ -78,6 +79,10 @@ html {
 
 .margin-tb-15 {
     margin: 15px 0;
+}
+
+.mt-8 {
+    margin-top: 8px;
 }
 
 .pull-right {
@@ -284,9 +289,9 @@ html {
 
 .place-img:hover {
     cursor: pointer;
+    transform: scale(1.1); 
     -ms-transform: scale(1.1); /* IE 9 */
     -webkit-transform: scale(1.1); /* Safari 3-8 */
-    transform: scale(1.1); 
 }
 
 .place-body {
@@ -308,9 +313,42 @@ html {
     text-align: justify;
 }
 
+/* Contact section */
+.contact-info {
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+.contact-info i[class*="icofont-"] {
+    width: 30px;
+    display: inline-block;
+}
+
+.form-control {
+    padding: 8px;
+    border: 1px solid #ccc;
+}
+
 /*  Footer section */
 #footer {
+    opacity: 0.8;
+    padding: 64px 16px;
+}
 
+#footer .socials-list a {
+ 
+    font-size: 24px;
+}
+
+#footer .copyright a:hover,
+#footer .socials-list a:hover {
+    opacity: 0.6;
+    cursor: pointer;
+} 
+
+#footer .copyright a {
+    opacity: 0.8;
+    color: #000;
 }
 
 /* Modal section */
@@ -335,6 +373,7 @@ html {
     width: 900px;
     position: relative;
     max-width: calc(100% - 32px);
+    animation: FadeInModal ease .5s;
 }
 
 .modal-close {
@@ -394,4 +433,15 @@ html {
 
 .modal-footer a {
     color: #2196F3;
+}
+
+@keyframes FadeInModal {
+    from {
+        opacity: 0;
+        transform: translateY(-150px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
