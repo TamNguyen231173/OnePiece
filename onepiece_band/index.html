@@ -51,37 +51,177 @@
         <div id="content">
 
             <!-- About section -->
-            <div id="band" class="content-section">
-                <h1 class="content-heading text-center">The band</h1>
-                <p class="content-sub-heading text-center">We love the sea!</p>
-                <p class="about-text">
-                    A long time ago, there live a fearsome pirate king who goes by the name of Gold D. Roger. He was able to attain everything. But alas he was captured and sentenced to execution. In the brink of death, he proclaimed that he left the great treasure, One Piece, somewhere in the Grand Line and it is for anyone to claim. This event ignited the Great Pirate Age.
-                </p>
-
-                <!-- Members list -->
-                
+            <div id="band" class="about-section filter-grey">
+                <div class="content-section">
+                    <h1 class="content-heading text-center">The band</h1>
+                    <p class="content-sub-heading text-center margin-tb-15">We love the sea!</p>
+                    <p class="about-text margin-tb-15">
+                        A long time ago, there live a fearsome pirate king who goes by the name of Gold D. Roger. He was able to attain everything. But alas he was captured and sentenced to execution. In the brink of death, he proclaimed that he left the great treasure, One Piece, somewhere in the Grand Line and it is for anyone to claim. This event ignited the Great Pirate Age.
+                    </p>
+    
+                    <!-- Members list -->
+                    <div class="row padding-tb-32 text-center">
+                        <!-- Ace -->
+                        <div class="col col-third filter-grey">
+                            <p class="member-name margin-tb-15">Ace</p>
+                            <img src="../onepiece_band/assets/img/Member/Ace.jpg" alt="Ace img" class="member-img rounded-border">
+                        </div>
+    
+                         <!-- Luffy -->
+                         <div class="col col-third filter-grey">
+                            <p class="member-name margin-tb-15">Luffy</p>
+                            <img src="../onepiece_band/assets/img/Member/Luffy.jpg" alt="Luffy img" class="member-img rounded-border">
+                        </div>
+    
+                         <!-- Sabo -->
+                         <div class="col col-third filter-grey">
+                            <p class="member-name margin-tb-15">Sabo</p>
+                            <img src="../onepiece_band/assets/img/Member/Sabo.jpg" alt="Sabo img" class="member-img rounded-border">
+                        </div>
+                    </div>
+                </div>
             </div>
 
             <!-- Tour section -->
             <div id="tour" class="tour-section">
                 <div class="content-section">
-                    <h1 class="content-heading text-center">Tour Dates</h1>
-                    <p class="content-sub-heading text-center">Remember to book your tickets!</p>
+                    <h1 class="content-heading text-center text-white">Tour Dates</h1>
+                    <p class="content-sub-heading text-center text-white margin-tb-15">Remember to book your tickets!</p>
+
+                    <!-- Tickets list -->
+                    <div class="tickets-list no-list-st">
+                        <li>September <span class="sold-out rounded-border">Sold out</span></li>
+                        <li>October <span class="sold-out rounded-border">Sold out</span></li>
+                        <li>November <span class="quantity pull-right">3</span></li>
+                    </div>
+
+                    <!-- Places list -->
+                    <div class="row padding-tb-32">
+                        <!-- Dawn Land -->
+                        <div class="col col-third">
+                            <img src="../onepiece_band/assets/img/Places/Dawn Land.png" alt="" class="place-img filter-grey">
+                            <div class="place-body">
+                                <h3 class="place-heading">Dawn Land</h3>
+                                <p class="place-time margin-tb-15">Fri 27 Nov 2016</p>
+                                <p class="place-desc margin-tb-15">The weak don’t get to decide anything, not even how they die.</p>
+                                <button class="btn rounded-border js-buy-btn">Buy Tickets</button>
+                            </div>
+                        </div>
+
+                        <!-- Dressrosa -->
+                        <div class="col col-third">
+                            <img src="../onepiece_band/assets/img/Places/Dressrosa.png" alt="" class="place-img filter-grey">
+                            <div class="place-body">
+                                <h3 class="place-heading">Dressrosa</h3>
+                                <p class="place-time margin-tb-15">Sat 28 Nov 2016</p>
+                                <p class="place-desc margin-tb-15">The weak don’t get to decide anything, not even how they die.</p>
+                                <button class="btn rounded-border js-buy-btn">Buy Tickets</button>
+                            </div>
+                        </div>
+
+                        <!-- Water seven -->
+                        <div class="col col-third">
+                            <img src="../onepiece_band/assets/img/Places/Water seven.png" alt="" class="place-img filter-grey">
+                            <div class="place-body">
+                                <h3 class="place-heading">Water seven</h3>
+                                <p class="place-time margin-tb-15">Sun 29 Nov 2016</p>
+                                <p class="place-desc margin-tb-15">The weak don’t get to decide anything, not even how they die.</p>
+                                <button class="btn rounded-border js-buy-btn">Buy Tickets</button>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-    
             </div>
+                
+               
             
             <!-- Contact section -->
             <div id="contact" class="content-section">
                 <h1 class="content-heading text-center">Contact</h1>
-                <p class="content-sub-heading text-center">Fan? Drop a note!</p>
+                <p class="content-sub-heading text-center margin-tb-15">Fan? Drop a note!</p>
             </div>
         </div>
 
+        <!-- Footer section -->
         <div id="footer">
 
         </div>
 
     </div>
+
+    <!-- Ticket modal section -->
+    <div class="modal js-modal">
+
+        <!-- Modal container -->
+        <div class="modal-container js-modal-container">
+
+            <!-- Modal close -->
+            <div class="modal-close text-white js-modal-close">
+                <i class="icofont-ui-close"></i>
+            </div>
+            <!-- Modal header -->
+            <header class="modal-header text-white">
+                <i class="icofont-sail-boat-alt-2"></i>
+                Tickets
+            </header>
+
+            <!-- Modal body -->
+            <div class="modal-body">
+                <!-- Ticket quantity -->
+                <label for="ticket-quantity" class="modal-label">
+                    <i class="icofont-shopping-cart"></i>
+                    Tickets, $15 per person
+                </label>
+                <input type="text" name="Ticket quantity" id="ticket-quantity" class="modal-input full-width" placeholder="How many?">
+                <!-- Ticket email -->
+                <label for="ticket-email" class="modal-label">
+                    <i class="icofont-ui-user"></i>
+                    Send to
+                </label>
+                <input type="email" name="Ticket email" id="ticket-email" class="modal-input full-width" placeholder="Enter email">
+                <!-- Pay button -->
+                <button class="pay-btn full-width">
+                    Pay
+                    <i class="icofont-ui-check"></i>
+                </button>
+                <!-- Modal footer -->
+                <footer class="modal-footer margin-tb-15">
+                    <p>Need <a href="">help?</a></p>
+                </footer>
+            </div>
+        </div>
+    </div>
+
+    <!-- Close and Open ticket modal -->
+    <script>
+        const buyBtns = document.querySelectorAll('.js-buy-btn');
+        const modal = document.querySelector('.js-modal');
+        const modalContainer = document.querySelector('.js-modal-container');
+        const modalClose = document.querySelector('.js-modal-close');
+
+        // Funtion open modal
+        function showTicketModal () {
+            modal.classList.add('open');
+        }
+        // Funtion close modal
+        function hideTicketModal () {
+            modal.classList.remove('open');
+        }
+
+        // Open modal when click on buy tickets button
+        for (const buyBtn of buyBtns) {
+            buyBtn.addEventListener('click', showTicketModal);
+        }
+
+        // Close modal
+        modalClose.addEventListener('click', hideTicketModal);
+        modal.addEventListener('click', hideTicketModal);
+        
+        modalContainer.addEventListener('click', function (event) {
+            event.stopPropagation ();
+        })
+    </script>
+
+    
 </body>
 </html>
