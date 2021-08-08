@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="../onepiece_band/assets/icofont/icofont/icofont.css">
     <link rel="icon" href="../onepiece_band/assets/img/Favicon/one piece.jpg">
     <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/responsive.css">
 </head>
 <body>
     <div id="main">
@@ -36,8 +37,13 @@
             <!-- End: Navigation -->
 
             <!-- Search button-->
-            <div class="search-button">
+            <div class="search-button pull-right">
                 <i class="icofont-search-2 search-icon"></i>
+            </div>
+
+            <!-- Menu mobile button -->
+            <div id="mobile-menu" class="menu-mobile-btn">
+                <i class="icofont-navigation-menu menu-mobile-icon"></i>
             </div>
         </div>
 
@@ -62,19 +68,19 @@
                     <!-- Members list -->
                     <div class="row padding-tb-32 text-center">
                         <!-- Ace -->
-                        <div class="col col-third filter-grey">
+                        <div class="col col-third s-col-full s-mt-32 filter-grey">
                             <p class="member-name margin-tb-15">Ace</p>
                             <img src="../onepiece_band/assets/img/Member/Ace.jpg" alt="Ace img" class="member-img rounded-border">
                         </div>
     
                          <!-- Luffy -->
-                         <div class="col col-third filter-grey">
+                         <div class="col col-third s-col-full s-mt-32 filter-grey">
                             <p class="member-name margin-tb-15">Luffy</p>
                             <img src="../onepiece_band/assets/img/Member/Luffy.jpg" alt="Luffy img" class="member-img rounded-border">
                         </div>
     
                          <!-- Sabo -->
-                         <div class="col col-third filter-grey">
+                         <div class="col col-third s-col-full s-mt-32 filter-grey">
                             <p class="member-name margin-tb-15">Sabo</p>
                             <img src="../onepiece_band/assets/img/Member/Sabo.jpg" alt="Sabo img" class="member-img rounded-border">
                         </div>
@@ -98,35 +104,35 @@
                     <!-- Places list -->
                     <div class="row padding-tb-32">
                         <!-- Dawn Land -->
-                        <div class="col col-third">
+                        <div class="col col-third s-col-full s-mt-32">
                             <img src="../onepiece_band/assets/img/Places/Dawn Land.png" alt="" class="place-img filter-grey">
                             <div class="place-body">
                                 <h3 class="place-heading">Dawn Land</h3>
                                 <p class="place-time margin-tb-15">Fri 27 Nov 2016</p>
                                 <p class="place-desc margin-tb-15">The weak don’t get to decide anything, not even how they die.</p>
-                                <button class="btn rounded-border js-buy-btn">Buy Tickets</button>
+                                <button class="btn rounded-border js-buy-btn s-full-width">Buy Tickets</button>
                             </div>
                         </div>
 
                         <!-- Dressrosa -->
-                        <div class="col col-third">
+                        <div class="col col-third s-col-full s-mt-32">
                             <img src="../onepiece_band/assets/img/Places/Dressrosa.png" alt="" class="place-img filter-grey">
                             <div class="place-body">
                                 <h3 class="place-heading">Dressrosa</h3>
                                 <p class="place-time margin-tb-15">Sat 28 Nov 2016</p>
                                 <p class="place-desc margin-tb-15">The weak don’t get to decide anything, not even how they die.</p>
-                                <button class="btn rounded-border js-buy-btn">Buy Tickets</button>
+                                <button class="btn rounded-border js-buy-btn s-full-width">Buy Tickets</button>
                             </div>
                         </div>
 
                         <!-- Water seven -->
-                        <div class="col col-third">
+                        <div class="col col-third s-col-full s-mt-32">
                             <img src="../onepiece_band/assets/img/Places/Water seven.png" alt="" class="place-img filter-grey">
                             <div class="place-body">
                                 <h3 class="place-heading">Water seven</h3>
                                 <p class="place-time margin-tb-15">Sun 29 Nov 2016</p>
                                 <p class="place-desc margin-tb-15">The weak don’t get to decide anything, not even how they die.</p>
-                                <button class="btn rounded-border js-buy-btn">Buy Tickets</button>
+                                <button class="btn rounded-border js-buy-btn s-full-width">Buy Tickets</button>
                             </div>
                         </div>
                     </div>
@@ -143,19 +149,19 @@
                 <!-- Contact content -->
                 <div class="row padding-tb-32">
                     <!-- Contact information -->
-                    <div class="col col-half contact-info">
+                    <div class="col col-half s-col-full contact-info">
                         <p><i class="icofont-location-pin"></i>Chicago, US</p>
                         <p><i class="icofont-phone"></i>Phone: +00 151515</p>
                         <p><i class="icofont-email"></i>Email: mail@mail.com</p>
                     </div>
                     <!-- Contact form -->
-                    <div class="col col-half">
+                    <div class="col col-half s-col-full s-mt-16">
                         <form action="">
                             <div class="row">
-                                <div class="col col-half">
+                                <div class="col col-half s-full-width">
                                     <input type="text" required name="Name" id="Name" placeholder="Name" class="form-control full-width">
                                 </div>
-                                <div class="col col-half">
+                                <div class="col col-half s-full-width s-mt-8">
                                     <input type="email" required name="Email" id="Email" placeholder="Email" class="form-control full-width">
                                 </div>
                             </div>
@@ -164,7 +170,7 @@
                                     <input type="text" required name="Message" id="Message" placeholder="Message" class="form-control full-width">
                                 </div>
                             </div>
-                            <input class="btn pull-right rounded-border margin-tb-15" type="submit" value="SEND">
+                            <input class="btn pull-right rounded-border margin-tb-15 s-full-width" type="submit" value="SEND">
                         </form>
                     </div>
                 </div>
@@ -186,7 +192,7 @@
                 <a><i class="icofont-twitter"></i></a>
                 <a><i class="icofont-linkedin"></i></a>
             </div>
-            <p class="copyright text-center margin-tb-15">Powered by <a href="">w3.css</a></p>
+            <p class="copyright text-center margin-tb-15">Powered by <a href="https://www.facebook.com/tamnguyen231173/">TamNguyen</a></p>
         </div>
 
     </div>
@@ -264,5 +270,38 @@
         })
     </script>
 
+    <!-- Close and open menu mobile -->
+    <script>
+        var header = document.getElementById('header');
+        var mobileMenu = document.getElementById('mobile-menu');
+        var headerHeight = header.clientHeight;
+       
+        // Close and Open funtion
+        mobileMenu.onclick = function () {
+            var isClosed = header.clientHeight === headerHeight;
+            if (isClosed) {
+                header.style.height = 'auto';
+            } else {
+                header.style.height = null;
+            }
+        }
+
+        // Auto close when click on menu
+        var menuItems = document.querySelectorAll('#nav li a[href*="#"]');
+        
+        for (var i = 0; i < menuItems.length; i++) {
+            var menuItem = menuItems[i];
+
+            menuItem.onclick = function (event) {
+                var isParentMenu = this.nextElementSibling && this.nextElementSibling.classList.contains('subnav');
+                
+                if (isParentMenu) {
+                    event.preventDefault();
+                } else {
+                    header.style.height = null;
+                }
+            }
+        }
+    </script>
 </body>
 </html>

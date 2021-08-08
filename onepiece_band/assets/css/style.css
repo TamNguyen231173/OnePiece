@@ -86,7 +86,7 @@ html {
 }
 
 .pull-right {
-    float: right;
+    float: right !important;
 }
 
 .rounded-border {
@@ -170,7 +170,6 @@ html {
 }
 
 #header .search-button {
-    float: right;
     padding: 0 24px;
     line-height: 46px;
 }
@@ -180,9 +179,24 @@ html {
     background-color: #53b9ee;
 }
 
+#header .menu-mobile-icon,
 #header .search-icon {
     color: #fff;
     font-size: 20px;
+}
+
+#header .menu-mobile-icon {
+    top: 0;
+    right: 0;
+    display: none;
+    padding: 0 24px;
+    line-height: 46px;
+    position: absolute;
+}
+
+#header .menu-mobile-btn:hover .menu-mobile-icon {
+    color: #000;
+    background-color: #ccc;
 }
 
 /* Slider section */
@@ -326,6 +340,7 @@ html {
 
 .form-control {
     padding: 8px;
+    font-size: 18px;
     border: 1px solid #ccc;
 }
 
